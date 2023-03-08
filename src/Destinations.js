@@ -22,7 +22,7 @@ export default class Destinations extends Component {
             <div>
               <li
                 key={d.id}
-                className="flex items-center justify-around my-6 border-2 border-slate-200 rounded-xl p-2 "
+                className="flex items-center justify-around my-6 border-2 border-slate-200 rounded-xl p-2  shadow-xl"
               >
                 <p className="font-sans">
                   <span className="text-lg font-bold italic font-sans">

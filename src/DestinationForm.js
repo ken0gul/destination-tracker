@@ -64,21 +64,21 @@ export default class DestinationForm extends Component {
 
   render() {
     return (
-      <div>
-        <div className="DestinationForm px-6 py-10 font-sans rounded-lg ">
+      <div className="">
+        <div className="DestinationForm px-6 py-10 font-sans rounded-lg shadow-md">
           <form
             onSubmit={this.handleSubmit}
-            className="shadow-xl rounded-lg px-4 py-6"
+            className=" rounded-lg px-4 py-6"
           >
-            <div>
+            <div className="flex-col justify-between p-6">
               <label
                 htmlFor="destination"
                 className="font-bold text-lg uppercase"
               >
-                Name of the destination
+                Your destination
               </label>
               <input
-                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-center mb-5"
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-center mb-5np mt-2"
                 type="text"
                 name="destination"
                 id="destination"
@@ -88,12 +88,12 @@ export default class DestinationForm extends Component {
               />
             </div>
 
-            <div>
+            <div className="flex-col justify-between p-6">
               <label htmlFor="activity" className="text-lg font-bold uppercase">
                 Activity
               </label>
               <input
-                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-center"
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-center mt-2"
                 type="text"
                 name="activity"
                 id="activity"

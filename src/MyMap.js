@@ -21,7 +21,14 @@ export default function MyMap(props) {
     mapRef.current.flyTo(coords, 13);
   };
   return (
-    <div className="MyMap my-6 flex gap-16 shadow-2xl">
+    <div className="MyMap my-6 flex gap-16 ">
+      <DestinationForm
+        coords={coords}
+        markers={markers}
+        setMarkers={setMarkers}
+        setCoords={setCoords}
+        handleFly={handleFly}
+      />
       <MapContainer
         center={{ lat: 51.505, lng: -0.09 }}
         zoom={13}
@@ -37,13 +44,6 @@ export default function MyMap(props) {
         <LocationMarker changeCoords={handleClick} markers={markers} />
       </MapContainer>
 
-      <DestinationForm
-        coords={coords}
-        markers={markers}
-        setMarkers={setMarkers}
-        setCoords={setCoords}
-        handleFly={handleFly}
-      />
     </div>
   );
 }
