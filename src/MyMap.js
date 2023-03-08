@@ -22,20 +22,26 @@ export default function MyMap(props) {
   };
   return (
     <div className="MyMap my-6 flex gap-16 ">
+      <div className="MyMap-form">
+
       <DestinationForm
         coords={coords}
         markers={markers}
         setMarkers={setMarkers}
         setCoords={setCoords}
         handleFly={handleFly}
-      />
+        
+        />
+        </div>
+      
+
       <MapContainer
         center={{ lat: 51.505, lng: -0.09 }}
         zoom={13}
         scrollWheelZoom={true}
-        style={{ height: "800px", width: "1000px" }}
+        style={{ height: "auto", width: "750px" }}
         ref={mapRef}
-      >
+        >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -43,6 +49,7 @@ export default function MyMap(props) {
 
         <LocationMarker changeCoords={handleClick} markers={markers} />
       </MapContainer>
+          
 
     </div>
   );

@@ -29,8 +29,8 @@ export default class MapApplication extends Component {
       <div className="MapApplication flex items-center justify-center my-12 rounded-lg ">
         {latitude || longitude ? (
           <div>
-            <nav className="bg-stone-50 border-black rounded p-6 ">
-            <h1 className="font-bold text-4xl tracking-wide uppercase font-serif">
+            <nav className="bg-stone-100 border-black rounded p-6 ">
+            <h1 className="font-bold text-4xl md:text-4xl tracking-wide uppercase font-serif">
               Destination Tracker
             </h1>
             </nav>
