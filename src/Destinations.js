@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Map, TileLayer } from "react-leaflet";
 
 export default class Destinations extends Component {
   static getDerivedStateFromProps(nextProps, prevState) {

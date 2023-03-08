@@ -1,14 +1,7 @@
-import {
-  MapContainer,
-  TileLayer,
-  useMap,
-  Marker,
-  Popup,
-  useMapEvents,
-} from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import LocationMarker from "./LocationMarker";
 
-import { React, useEffect, useState, useRef } from "react";
+import { React, useState, useRef } from "react";
 import DestinationForm from "./DestinationForm";
 
 export default function MyMap(props) {

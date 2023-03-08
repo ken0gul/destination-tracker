@@ -1,6 +1,5 @@
 import "./App.css";
 
-import MyMap from "./MyMap";
 import MapApplication from "./MapApplication";
 
 function App() {
